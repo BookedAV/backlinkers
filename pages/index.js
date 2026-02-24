@@ -55,7 +55,12 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts();
+  let posts = [];
+  try {
+    posts = await getAllPosts();
+  } catch (e) {
+    console.error('Failed to fetch posts:', e);
+  }
   return {
     props: { posts },
     revalidate: 60,
