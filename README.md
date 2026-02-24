@@ -48,5 +48,5 @@ Automatically displays all blog posts your bot uploads to Supabase as real web p
 - Built-in sitemap at `/sitemap.xml` for search engines
 - Fully automatic — no manual work after setup
 
-## Optional: Custom Domain
+## Optional: Custom Domain 
 In Vercel dashboard → your project → Settings → Domains → add your own domain.
