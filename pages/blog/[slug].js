@@ -60,9 +60,8 @@ export default function BlogPost({ post }) {
 }
 
 export async function getStaticPaths() {
-  const slugs = await getAllSlugs();
   return {
-    paths: slugs.map((s) => ({ params: { slug: s.slug } })),
+    paths: [],
     fallback: 'blocking',
   };
 }
